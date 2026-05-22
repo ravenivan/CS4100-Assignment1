@@ -2,6 +2,11 @@ import time
 import numpy as np
 from gridgame import *
 
+import os
+os.environ["SDL_VIDEODRIVER"] = "dummy"
+import pygame
+pygame.init()
+
 ##############################################################################################################################
 
 # You can visualize what your code is doing by setting the GUI argument in the following line to true.
@@ -64,10 +69,9 @@ start = time.time()  # <- do not modify this.
 # Write all your code in the area below. 
 ##########################################
 
-# AI usage: Docstring generation, code debugging, generating syntax and certain functions I wasn't sure how to implement.
+# AI usage: Docstring generation, code debugging, generating syntax and certain functions I wasn't sure how to implement. Also needed help running the pygame without it crashing using pump
 
 import random as rand
-import pygame
 
 # Helper functions
 
